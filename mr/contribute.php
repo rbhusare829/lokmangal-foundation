@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>योगदान - देणगी / दान - स्वयंसेवक - आधार</title><!-- mobile responsive meta -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    
+    <meta name="keywords" content="lokmangal, ngo, quality education, donation, charity, ngo's in maharashtra, non profit organizations">
+    <meta name="description" content="लोकमंगल फाऊंडेशनच्या सत्कार्यास पाठिंबा देऊ इच्छित असाल, तर आपण आपल्या वेळेनुसार स्वयंसेवक बनू शकता किंवा इच्छेनुसार देणगीही देऊ शकता. आपल्या योगदानामुळे मोठा फरक पडू शकतो.">
+    
+    <!-- <link href="../images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="../images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"> -->
+    <link href="../images/favicons/favicon.png" rel="icon" sizes="16x16" type="image/png">
+
+    <link href="../my-style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134149952-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134149952-1');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="boxed_wrapper">
+        <div class="top-bar">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="top-bar-text float_left">
+                        <a class="thm-btn donate-box-btn" href="donation-form.php">देणगी द्या</a>
+
+                        <!-- <p>No One Has Ever Become Poor By Giving!</p> -->
+
+                    </div>
+
+
+                    <div class="right-column float_right">
+                        <ul class="list_inline contact-info">
+                            <li><span class="icon-phone"></span>फोन : ९०२८७७५५९०</li>
+
+                            <li><span class="icon-back"></span> ई-मेल : lokmangalgroups@gmail.com</li>
+
+                            <li><a href="../contribute.php" style="color: #333;">English</a> | <span style="color: #14432A; font-weight: bold;">मराठी</span></li>
+
+                        </ul>
+
+                        <!-- <div class="" id="polyglotLanguageSwitcher">
+                           
+                            <form action="#">
+
+                                <select id="polyglot-language-options">
+                                
+                                    <option id="en" selected value="en">
+                                        English
+                                    </option>
+
+                                    <option id="fr" value="fr">
+                                        Marathi
+                                    </option>
+
+                                </select>
+
+                            </form>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="theme_menu stricky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="main-logo">
+                            <a href="index.php"><img alt="Lokmangal Logo" src="../images/logo/lokmangal-logo.png"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-9 menu-column">
+                       
+                        <nav class="defaultmainmenu" id="main_menu">
+                           
+                            <ul class="defaultmainmenu-menu">
+                                
+                                <li>
+                                    <a href="index.php">मुख्य पृष्ठ</a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="javascript:void(0);">फाऊंडेशनबद्दल</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="about.php">लोकमंगल फाऊंडेशनबद्दल</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="volunteer.php">स्वयंसेवक म्हणून सहभागी व्हा</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="faq.php">सामान्य प्रश्न</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="testimonials.php">अभिप्राय</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="projects.php">प्रकल्प</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="lokmangal-annapurna-yojana.php">लोकमंगल अन्नपूर्णा योजना </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="jalsandharan-project.php">जलसंधारण प्रकल्प</a>
+                                        </li>
+
+                                        <li class="hidden-xs">
+                                            <a href="vidyadaan-yojana.php">लोटस (लोकमंगल ऑर्गनायझेशन <br>फॉर टीचिंग अंडरप्रिव्हिलेज्ड स्टुडंट्स)</a>
+                                        </li>
+
+                                        <li class="hidden-lg hidden-md">
+                                            <a href="vidyadaan-yojana.php">लोटस <br> (लोकमंगल ऑर्गनायझेशन फॉर<br> टीचिंग अंडरप्रिव्हिलेज्ड स्टुडंट्स)</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="samudayik-vivah-sohala.php">सामुदायिक विवाह सोहळा</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="gallery.php">छायाचित्रे</a>
+                                </li>
+
+                                <li>
+                                    <a href="contribute.php">योगदान</a>
+                                </li>
+                                
+
+                                <li>
+                                    <a href="https://lokmangalfoundation.blogspot.com/" target="_blank">लेख</a>
+                                </li>
+
+                                 <li>
+                                    <a href="contact.php">संपर्क</a>
+                                </li>
+
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                   
+                    <div class="right-column">
+                        <div class="nav_side_content">
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="https://www.facebook.com/lokmangalfoundation/" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="https://twitter.com/LokmangalFound" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.instagram.com/lokmangal_foundation/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="https://in.pinterest.com/lokmangalfoundation/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.linkedin.com/company/lokmangalfoundation/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCk4QgXC_Qr6UtkHx9Tbm8yA?view_as=subscriberv" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="inner-banner has-base-color-overlay text-center" style="background: url(../images/background/top-banner.jpg);">
+            <div class="container">
+                <div class="box">
+                    <h1 style="font-size: 24px;">योगदान द्या</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="breadcumb-wrapper">
+            <div class="container">
+                <div class="pull-left">
+                    <ul class="list-inline link-list">
+                        <li>
+                            <a href="index.php">मुख्य पृष्ठ</a>
+                        </li>
+
+                        <li>योगदान द्या</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        
+         <section class="about sec-padd2 style-2">
+            
+            <div class="container">
+               
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        
+                        <div class="content">
+                           
+                            <h3 class="thm-color">प्रायोजक</h3>
+
+                            <div class="text">
+                                <p>आपण आपल्या सोयीनुसार खालील प्रकल्पांना पूर्णपणे किंवा अंशतः प्रायोजित करू शकता.</p>
+                            </div>
+
+                            <br>
+
+                            <h4 class="thm-color">१. लोकमंगल अन्नपूर्णा योजना</h4>
+                                
+                            <br>
+
+                            <p>चला, आपल्याला घडविणार्‍या पिढीची काळजी घेऊया.
+आपल्याला घडवणारी पिढी आज स्वतः मोडून पडण्याच्या उंबरठ्यावर आहे. आज ते वयाच्या अश्या टप्प्यावर आहेत जेथे ते स्वतःसाठी भाकरी मिळविण्यासही असमर्थ आहेत. चला, त्यांना पोषणपूर्ण आहार देऊया.
+दरमहा रु. ५,७०,००० (१५०० x ३८० लाभार्थी) खर्च केले जात आहेत. लोकमंगल अन्नपूर्णा योजनेच्या अंतर्गत आपण या गोष्टी प्रायोजित करू शकता
+</p>
+
+                            <ul class="list">
+                                <li><i class="fa fa-check-circle"></i> एका गरजू ज्येष्ठ नागरिकाचे एक वेळचे भोजन  </li>
+                                <li><i class="fa fa-check-circle"></i> एका गरजू ज्येष्ठ नागरिकाचे एका दिवसाचे भोजन</li>
+                                <li><i class="fa fa-check-circle"></i> एका गरजू ज्येष्ठ नागरिकाचे एका आठवड्याचे भोजन</li>
+                                <li><i class="fa fa-check-circle"></i> एका गरजू ज्येष्ठ नागरिकाचे एका महिन्याचे भोजन  </li>
+                                <li><i class="fa fa-check-circle"></i> एका गरजू ज्येष्ठ नागरिकाचे एका वर्षाचे भोजन</li>
+                                <li><i class="fa fa-check-circle"></i> विशिष्ट भागातील ज्येष्ठ नागरिक</li>
+                                <li><i class="fa fa-check-circle"></i> विशिष्ट कालावधीसाठी ज्येष्ठ नागरिक</li>
+                            </ul>
+
+                            <br>
+
+                            <h4 class="thm-color">२. जलसंधारण प्रकल्प</h4>
+                                
+                            <br>
+
+                            <p>चला, पृथ्वीचे रक्षण करूया.
+पाण्याचे स्त्रोत दुर्मिळ होत चालले आहेत. जलसंधारण प्रकल्पासह आम्ही जलस्रोतांचे संरक्षण आणि त्यांच्या संख्येत वाढ व्हावी यासाठी प्रयत्न करत आहोत. <br>
+या प्रकल्पांतर्गत, आपण आपण या गोष्टी प्रायोजित करू शकता
+ </p>
+
+
+                            <ul class="list">
+                                <li><i class="fa fa-check-circle"></i>संपूर्ण प्रकल्प</li>
+                                <li><i class="fa fa-check-circle"></i> आवश्यक उपकरणे</li>
+                               
+                            </ul>
+
+                            <br>
+
+                            <h4 class="thm-color">३. विद्यादान योजना</h4>
+                             
+                            <br>
+
+                            <p>चला, पुढच्या पिढीला शिक्षित करूया.
+आमच्याकडे असणार्‍या विद्यार्थ्यांपैकी एखाद्यासाठी आपण रक्कम दान करू शकता व त्यायोगे त्यांच्या शिक्षणाची आर्थिक जबाबदारी उचलू शकता. <br>
+आमच्याकडे असलेल्या विद्यार्थ्यांना आपण वैयक्तिकरित्या भेटू शकता आणि त्यापैकी कोणाचे शिक्षण प्रायोजित करू शकता.
+</p>
+                            
+                            <br>
+
+                            <div class="section-title2">
+                                
+                                <h4 class="thm-color">४. सामुदायिक विवाह सोहळा</h4>
+                                
+                                <br>
+
+                                <p>चला, नवी स्वप्ने फुलविण्यास मदत करूया.
+तरुण पिढीच्या नवजीवनाचा प्रारंभ होत आहे. त्यांच्या विवाहाचे प्रायोजकत्व घेऊन त्यांना मदत करूया.
+
+सामुदायिक विवाह सोहळा प्रकल्पाच्या अंतर्गत आपण या गोष्टी प्रायोजित करू शकता</p>
+
+                            </div>
+
+                            <ul class="list">
+                                <li><i class="fa fa-check-circle"></i> लग्नाचा पोशाख, दागदागिने आणि गृहोपयोगी वस्तू</li>
+                                <li><i class="fa fa-check-circle"></i> एका जोडप्याचा विवाह</li>
+                                <li><i class="fa fa-check-circle"></i> संपूर्ण कार्यक्रम</li>
+                            </ul>
+
+                            </div>      
+
+                            <!--                      
+
+                            <h3 class="thm-color">Volunteer</h3>
+
+                            <div class="text">
+                                <p>We can have your committed heart. Your passion to help the needy people is going to be your path towards a good deed. We are there to guide you on that path. <br>
+                                You can become a volunteer for any of our projects and we will help you in getting involved.</p>
+                            </div>
+
+                            <br>
+
+                            <h3 class="thm-color">Give a Donation</h3>
+
+                            <div class="text">
+                                <p>You can donate the money, which we will use for any of our projects. You will also be able to avail tax benefits with the donations you kindly give us. <br>
+                                Also, your donations can be in cash or kind. We value them all.</p>
+                            </div>
+
+                            <br>
+
+                            <h3 class="thm-color">Corporate Support</h3>
+
+                            <div class="text">
+                                <p>If planning, strategizing, designing is your skill then join forces with us & lend us your knowledge as a volunteer. <br>
+                                Your corporate intelligence can bring enormous changes. These changes will lead people towards a brilliant tomorrow.</p>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> 
+
+
+        <section class="why-chooseus1 sec-padd-top">
+           
+            <div class="container">
+                
+                <div class="row">
+                   
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        
+                        <div class="item">
+                           
+                            <div class="inner-box">
+                                <!--icon-box-->
+
+                                <div class="icon_box">
+                                    <img src="../images/icons/become-a-volunteer.png">
+                                </div>
+                                <a href="javascript:void(0);">
+                                <h4>स्वयंसेवक व्हा</h4></a>
+                            </div>
+
+                            <div class="text">
+                                <p>आपल्या समर्पित वृत्तीचे आम्ही स्वागत करतो. गरजू लोकांना मदत करण्याची आपली वृत्ती हे सत्कर्मच आहे. सत्कर्माच्या या मार्गावर आपल्याला मार्गदर्शन करण्यासाठी आम्ही आपल्यासह आहोतच. आपण आमच्या कोणत्याही प्रकल्पासाठी स्वयंसेवक बनू शकता आणि आम्ही त्या कार्यात सहभागी होण्यासाठी आपल्याला मदत करू. आपल्या वेळ मौल्यवान आहे आणि आम्ही त्याचा आदर करतो. आपल्याला आपला वेळ व प्रयत्न समर्पित करण्याची इच्छा असल्यास आम्हाला आपल्यासाठी उपयुक्त असे काम शोधण्यास आनंद वाटेल.</p>
+                            </div>
+
+                            <br>
+
+                            <a class="thm-btn donate-box-btn" href="donation-form.php">देणगी द्या</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                       
+                        <div class="item">
+                         
+                            <div class="inner-box">
+                                <!--icon-box-->
+
+                                <div class="icon_box">
+                                    <img src="../images/icons/corporate-support.png">
+                                </div>
+                                <a href="javascript:void(0);">
+                                <h4>कॉर्पोरेट समर्थन</h4></a>
+                            </div>
+
+                            <div class="text">
+                                <p>कॉपोर्रेट सोशल रिस्पॉन्सिबिलिटी (सीएसआर) म्हणून कंपन्या समाजासाठी काम करतात. बर्‍याच कंपन्या दानधर्म करतात ते केवळ कायदेशीर दायित्व म्हणून नव्हे, तर समाजामध्ये सद्भावना निर्माण करण्यासाठी. या समाजाचा एक भाग म्हणून आपले कर्तव्य पूर्ण करताना आपल्यासारख्या कंपन्या यंदा लोकमंगल फाऊंडेशनच्या कार्यास हातभार लावू शकतात. सीएसआर उपक्रमांमुळे कंपन्या समाजासाठी योगदान देऊ शकतात तसेच आपल्या कर्मचार्‍यांमध्ये जबाबदारीची जाणीवही निर्माण करू शकतात.</p>
+                            </div>
+
+                            <br>
+                            
+                            <a class="thm-btn donate-box-btn" href="donation-form.php">देणगी द्या</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        
+                        <div class="item">
+                            
+                            <div class="inner-box">
+                                <!--icon-box-->
+
+                                <div class="icon_box">
+                                    <img src="../images/icons/donation.png">             
+                                </div>
+                                <a href="javascript:void(0);">
+                                <h4>देणगी द्या</h4></a>
+                            
+                            </div>
+
+                            <div class="text">
+                                <p>आपण देणगीस्वरूप पैसे देऊ शकता, ज्यांचा आमच्या एखाद्या प्रकल्पासाठी विनियोग केला जाऊ शकतो. आपण दिलेली देणगी ही कर सवलतीचा लाभ मिळविण्यास पात्र आहे.
+आपण रोख रक्कम अथवा वस्तूंच्या स्वरुपातही देणगी देऊ शकता. आम्हासाठी सर्व प्रकारच्या देणग्या या मोलाच्या आहेत.
+</p>
+                            </div>
+
+                            <br>
+                            
+                           <a class="thm-btn donate-box-btn" href="donation-form.php">देणगी द्या</a>
+
+                        </div>                        
+                        
+                    </div>                    
+
+                </div>
+
+            </div>
+        </section>
+
+
+         <section class="call-out">
+            <div class="container">
+                <div class="float_left">
+                    <h4>आपणही एक आधारस्तंभ बना. </h4>
+                </div>
+
+
+                <div class="float_right">
+                    <a class="thm-btn style-3" href="volunteer.php">स्वयंसेवक बना</a>
+                </div>
+            </div>
+        </section>
+
+        
+        <footer class="main-footer">
+        <!--Widgets Section-->
+
+            <div class="widgets-section">
+                <div class="container">
+                    <div class="row">
+                        <!--Big Column-->
+
+                        <article class="big-column col-md-6 col-sm-12 col-xs-12">
+                            <div class="row clearfix">
+                                <!--Footer Column-->
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget about-column">
+                                        <div class="section-title">
+                                            <h4>आमच्या विषयी</h4>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>ग्रामीण भारताला त्याचे गतवैभव पुन्हा एकदा प्राप्त करून देण्यासाठी लोकमंगल फाऊंडेशन कार्यरत आहे. ग्रामीण समाजाच्या सर्व स्तरातील व सर्व विभागातील नागरिकांना त्यांचे जीवनमान उंचावण्यासाठी आम्ही सर्वतोपरी साहाय्य करू इच्छितो...</p>
+                                        </div>
+
+
+                                        <div class="link">
+                                            <a class="default_link" href="about.php">अधिक वाचा <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Footer Column-->
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget link-column">
+                                        <div class="section-title">
+                                            <h4>प्रकल्प</h4>
+                                        </div>
+
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li>
+                                                    <a href="lokmangal-annapurna-yojana.php">लोकमंगल अन्नपूर्णा योजना</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="jalsandharan-project.php">जलसंधारण प्रकल्प</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="vidyadaan-yojana.php">लोटस (लोकमंगल ऑर्गनायझेशन फॉर टीचिंग अंडरप्रिव्हिलेज्ड स्टुडंट्स) </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="samudayik-vivah-sohala.php">सामुदायिक विवाह सोहळा</a>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </article>
+                        <!--Big Column-->
+
+                        <article class="big-column col-md-6 col-sm-12 col-xs-12">
+                            <div class="row clearfix">
+                                <!--Footer Column-->
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget link-column">
+                                        <div class="section-title">
+                                            <h4>जलद दुवे</h4>
+                                        </div>
+
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                               
+
+                                                <li>
+                                                    <a href="about.php">फाऊंडेशन बद्दल</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="projects.php">प्रकल्प</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="gallery.php"> छायाचित्रे</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="contribute.php"> योगदान</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="https://lokmangalfoundation.blogspot.com/" target="_blank"">लेख</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="contact.php">संपर्क</a>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget contact-column">
+                                        <div class="section-title">
+                                            <h4>संपर्कात रहा</h4>
+                                        </div>
+
+
+                                        <ul class="contact-info">
+                                            <li><i class="icon-arrows"></i><span>पत्ता : </span>लोकमंगल फाऊंडेशन <br> १३-अ, सह्याद्री नगर, जुन्या होटगी नाक्याजवळ, विकास नगर, <br>सोलापूर - ४१३००३ </li>
+
+
+                                            <li><i class="icon-phone"></i> <span>फोन :</span> (०२१७) २३ २२ ४८० <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ९०२८७७५५९०</li>
+
+
+                                            <li><i class="icon-back"></i><span>ई-मेल:</span><a href="mailto:lokmangalgroups@gmail.com" target="_top" style="color: #999;"> lokmangalgroups@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer Bottom-->
+
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="pull-left copy-text">
+                    <p style="color: #999;"><a href="javascript:void(0);">कॉपीराईट्स © २०१९. लोकमंगल फाऊंडेशन. </a> सर्व हक्क राखीव. <a href="http://www.trimitiy.com/" target="_blank">त्रिमितीय स्टुडिओज प्रा. लि. द्वारा निर्मित.</a></p>
+                </div>
+                <!-- /.pull-right -->
+
+
+                <!-- <div class="pull-right get-text">
+                    <a href="#">Join Us Now!</a>
+                </div> -->
+                <!-- /.pull-left -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- Scroll Top  -->
+        <button class="scroll-top tran3s color2_bg"><span class="fa fa-angle-up"></span></button> <!-- preloader  -->
+
+        <!-- Scroll Top  -->
+        <button class="scroll-top tran3s color2_bg"><span class="fa fa-angle-up"></span></button> <!-- preloader  -->
+
+
+       
+        <!-- jQuery -->
+        <script src="../js/jquery.js">
+        </script> 
+        <script src="../js/bootstrap.min.js">
+        </script> 
+        <script src="../js/menu.js">
+        </script> 
+        <script src="../js/owl.carousel.min.js">
+        </script> 
+        <script src="../js/jquery.mixitup.min.js">
+        </script> 
+        <script src="../js/jquery.fancybox.pack.js">
+        </script> 
+        <script src="../js/imagezoom.js">
+        </script> 
+        <script src="../js/jquery.magnific-popup.min.js">
+        </script> 
+        <script src="../js/jquery.polyglot.language.switcher.js">
+        </script> 
+        <script src="../js/SmoothScroll.js">
+        </script> 
+        <script src="../js/jquery.appear.js">
+        </script> 
+        <script src="../js/jquery.countTo.js">
+        </script> 
+        <script src="../js/validation.js">
+        </script> 
+        <script src="../js/wow.js">
+        </script> 
+        <script src="../js/jquery.fitvids.js">
+        </script> 
+        <script src="../js/nouislider.js">
+        </script> 
+        <script src="../js/bootstrap-select.min.js">
+        </script> <!-- revolution slider js -->
+         
+        <script src="../js/rev-slider/jquery.themepunch.tools.min.js">
+        </script> 
+        <script src="../js/rev-slider/jquery.themepunch.revolution.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.actions.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.carousel.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.kenburn.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.layeranimation.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.migration.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.navigation.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.parallax.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.slideanims.min.js">
+        </script> 
+        <script src="../js/rev-slider/revolution.extension.video.min.js">
+        </script> 
+        <script src="../js/custom.js">
+        </script>
+    </div>
+</body>
+
+</html>

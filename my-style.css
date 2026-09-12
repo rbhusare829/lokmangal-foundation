@@ -1,0 +1,20 @@
+.main-footer .text p
+{
+	color:#999;
+}
+
+
+@media (max-width: 320px)
+{
+	.slide-content-box h1
+	{
+		font-size:20px;
+	}
+	.my-txt
+	{
+		font-size: 60px;
+	}
+}
+
+
+
