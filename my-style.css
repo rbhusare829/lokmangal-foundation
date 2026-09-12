@@ -1,20 +1,1310 @@
-.main-footer .text p
-{
-	color:#999;
+/* ==========================================================================
+   LOKMANGAL FOUNDATION — DESIGN SYSTEM & REFINEMENTS
+   Based on Requirements & Task Tracker Specifications
+   Inspiration: Modern Sanjeevan Layout & Distinct Lokmangal Identity
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+:root {
+  /* 03. Colour Palette & Design System */
+  --brand-green-primary: #14432A;
+  --brand-green-medium: #1F6B3D;
+  --brand-orange-accent: #EA8B22;
+  --orange-btn-text: #4A2F0C;
+  --light-orange-tint: #FDEEDC;
+  --orange-icon: #9A5A0F;
+  --light-green-tint: #E3F0E6;
+  --green-icon: #14432A;
+  --page-bg: #FAF8F3;
+  --card-bg: #FFFFFF;
+  --main-text: #2B2B2B;
+  --secondary-text: #5F5E5A;
+  --footer-text: #E3F0E6;
+  --footer-muted: #A8D0B4;
+
+  /* Typography */
+  --font-marathi: 'Tiro Devanagari Marathi', serif;
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Global Font & Background */
+body, .boxed_wrapper {
+  background-color: var(--page-bg) !important;
+  color: var(--main-text);
+  font-family: var(--font-marathi), var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-marathi), var(--font-sans);
+  color: var(--brand-green-primary);
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--secondary-text);
+  line-height: 1.7;
+}
+
+/* 04. Top Bar & Navigation Bar */
+.top-bar {
+  background-color: #0E301E !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.top-bar .contact-info li,
+.top-bar .contact-info li a {
+  color: #D2E4D8 !important;
+  transition: color 0.2s ease;
+}
+
+.top-bar .contact-info li a:hover {
+  color: var(--brand-orange-accent) !important;
+}
+
+.top-bar .contact-info li span.icon-phone,
+.top-bar .contact-info li span.icon-back {
+  color: var(--brand-orange-accent) !important;
+  margin-right: 5px;
+}
+
+/* Separate Navigation Bar Background */
+.theme_menu.stricky {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 4px 20px rgba(20, 67, 42, 0.08);
+  border-bottom: 2px solid var(--light-green-tint);
+  transition: all 0.3s ease;
+}
+
+.theme_menu.stricky.stricked-menu {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+}
+
+.defaultmainmenu .defaultmainmenu-menu > li > a {
+  font-family: var(--font-marathi), var(--font-sans);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--brand-green-primary) !important;
+  padding: 30px 14px;
+  transition: all 0.2s ease;
+}
+
+.defaultmainmenu .defaultmainmenu-menu > li:hover > a,
+.defaultmainmenu .defaultmainmenu-menu > li.active > a {
+  color: var(--brand-orange-accent) !important;
+}
+
+.defaultmainmenu .defaultmainmenu-menu > li > ul.dropdown {
+  background-color: #FFFFFF;
+  border-top: 3px solid var(--brand-orange-accent);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 0 0 8px 8px;
+}
+
+.defaultmainmenu .defaultmainmenu-menu > li > ul.dropdown > li > a {
+  font-family: var(--font-marathi), var(--font-sans);
+  color: var(--main-text) !important;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.defaultmainmenu .defaultmainmenu-menu > li > ul.dropdown > li:hover > a {
+  background-color: var(--light-green-tint);
+  color: var(--brand-green-primary) !important;
+  padding-left: 24px;
+}
+
+/* 05. Language Selection Dropdown */
+.lang-dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.lang-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  color: #FFFFFF !important;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.lang-dropdown-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: var(--brand-orange-accent);
+}
+
+.lang-dropdown-btn i {
+  color: var(--brand-orange-accent);
+  font-size: 14px;
+}
+
+.lang-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background: #FFFFFF;
+  min-width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  border: 1px solid #E2E8F0;
+  overflow: hidden;
+}
+
+.lang-dropdown-wrapper:hover .lang-dropdown-menu,
+.lang-dropdown-wrapper:focus-within .lang-dropdown-menu {
+  display: block;
+}
+
+.lang-dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  color: var(--main-text) !important;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.lang-dropdown-menu a:hover {
+  background: var(--light-green-tint);
+  color: var(--brand-green-primary) !important;
+}
+
+.lang-dropdown-menu a.active {
+  background: var(--light-green-tint);
+  color: var(--brand-green-primary) !important;
+  font-weight: 700;
+}
+
+/* 06. Social Media Icons */
+.social-icon li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--light-green-tint);
+  color: var(--brand-green-primary) !important;
+  margin: 0 2px;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.social-icon li a:hover {
+  background: var(--brand-orange-accent);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Custom X (Twitter replacement) icon */
+.x-icon-svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 07. Prominent Donate Button */
+.donate-btn-nav {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--brand-orange-accent) !important;
+  color: var(--orange-btn-text) !important;
+  font-family: var(--font-marathi), var(--font-sans);
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  padding: 10px 22px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 12px rgba(234, 139, 34, 0.35);
+  transition: all 0.25s ease !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none !important;
+  border: 2px solid transparent;
+}
+
+.donate-btn-nav:hover {
+  background-color: #D97A14 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(234, 139, 34, 0.45);
+  transform: translateY(-2px);
+}
+
+.donate-btn-nav i {
+  font-size: 14px;
+  color: var(--orange-btn-text);
+  transition: color 0.2s ease;
+}
+
+.donate-btn-nav:hover i {
+  color: #FFFFFF;
+}
+
+/* 08. Hero Section Refinements */
+.rev_slider_wrapper {
+  position: relative;
+  background-color: #0A1E13;
+}
+
+.slide-content-box {
+  background: rgba(20, 67, 42, 0.88);
+  padding: 28px 36px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  border-left: 5px solid var(--brand-orange-accent);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  max-width: 650px;
+}
+
+.slide-content-box h1 {
+  color: #FFFFFF !important;
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-size: 38px !important;
+  line-height: 1.25 !important;
+  margin-bottom: 12px !important;
+  font-weight: 700 !important;
+}
+
+.slide-content-box p {
+  color: #E3F0E6 !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+}
+
+.slide-content-box .thm-btn {
+  background: var(--brand-orange-accent) !important;
+  color: var(--orange-btn-text) !important;
+  font-weight: 700 !important;
+  border-radius: 25px !important;
+  padding: 10px 24px !important;
+  box-shadow: 0 4px 14px rgba(234, 139, 34, 0.35);
+}
+
+.slide-content-box .thm-btn:hover {
+  background: #D97A14 !important;
+  color: #FFFFFF !important;
+}
+
+.slide-content-box .thm-btn.style-3 {
+  background: transparent !important;
+  border: 2px solid #FFFFFF !important;
+  color: #FFFFFF !important;
+  margin-left: 10px;
+}
+
+.slide-content-box .thm-btn.style-3:hover {
+  background: #FFFFFF !important;
+  color: var(--brand-green-primary) !important;
+}
+
+/* 09. Project Cards & "अधिक वाचा" (Read More) CTA */
+.urgent-cause2 {
+  background-color: var(--page-bg) !important;
+}
+
+.urgent-cause2 .item {
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(20, 67, 42, 0.07);
+  border: 1px solid #EAE5D9;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.urgent-cause2 .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(20, 67, 42, 0.12);
+  border-color: var(--brand-green-medium);
+}
+
+.urgent-cause2 .content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.urgent-cause2 .content .title {
+  color: var(--brand-green-primary) !important;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: color 0.2s ease;
+}
+
+.urgent-cause2 .content .title:hover {
+  color: var(--brand-orange-accent) !important;
+}
+
+/* Custom "अधिक वाचा" CTA Button */
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: var(--light-green-tint);
+  color: var(--brand-green-primary) !important;
+  font-family: var(--font-marathi), var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #C4DFC9;
+  transition: all 0.25s ease;
+  text-decoration: none !important;
+  margin-top: 14px;
+}
+
+.read-more-btn:hover {
+  background-color: var(--brand-green-primary);
+  color: #FFFFFF !important;
+  border-color: var(--brand-green-primary);
+  transform: translateX(3px);
+}
+
+.read-more-btn i {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.read-more-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* Progress Bar & Beneficiary Counter Styling */
+.progress-box .bar {
+  background: #EAE6DB !important;
+  border-radius: 10px !important;
+  height: 8px !important;
+  overflow: hidden;
+}
+
+.progress-box .bar-inner {
+  background: linear-gradient(90deg, var(--brand-green-medium), var(--brand-orange-accent)) !important;
+  border-radius: 10px !important;
+  height: 8px !important;
+}
+
+.urgent-cause2 .donate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary-text);
+  margin-top: 10px;
+}
+
+.urgent-cause2 .donate .stat-badge {
+  background: var(--light-orange-tint);
+  color: var(--orange-icon);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* 10. Compact Statistics / Beneficiary Section */
+.compact-stats-section {
+  background: linear-gradient(135deg, #103822 0%, #174E31 100%);
+  padding: 45px 0 !important;
+  border-top: 3px solid var(--brand-orange-accent);
+  border-bottom: 3px solid var(--brand-orange-accent);
+  color: #FFFFFF;
+}
+
+.compact-stats-section .section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.compact-stats-section .section-header h2 {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.compact-stats-section .section-header p {
+  color: var(--footer-muted);
+  font-size: 15px;
+}
+
+.stat-card-compact {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.stat-card-compact:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-4px);
+  border-color: var(--brand-orange-accent);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card-compact .stat-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card-compact .stat-icon-circle.green-tint {
+  background: var(--light-green-tint);
+  color: var(--green-icon);
+}
+
+.stat-card-compact .stat-icon-circle.orange-tint {
+  background: var(--light-orange-tint);
+  color: var(--orange-icon);
+}
+
+.stat-card-compact .stat-icon-circle img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.stat-card-compact .stat-number {
+  font-family: var(--font-marathi), var(--font-sans);
+  font-size: 34px;
+  font-weight: 800;
+  color: #FFD285;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-card-compact .stat-label {
+  font-family: var(--font-marathi), var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: #E3F0E6;
+}
+
+/* 11. "फाऊंडेशन बद्दल" Section Clean Polish */
+.about.sec-padd2 {
+  background-color: var(--page-bg) !important;
+}
+
+.about .img-box img {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.about ul li {
+  font-size: 15px;
+  color: var(--main-text);
+  margin-bottom: 10px;
+}
+
+.about ul li i {
+  color: var(--brand-green-medium);
+  margin-right: 8px;
+}
+
+/* Core Pillars 3-Column Card Grid */
+.about-2.sec-padd3 {
+  background-color: var(--page-bg) !important;
+}
+
+.about-2 .single-item {
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px rgba(20, 67, 42, 0.06);
+  border: 1px solid #EAE5D9;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.about-2 .single-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(20, 67, 42, 0.1);
+}
+
+.about-2 .single-item .icon_box {
+  background: var(--light-green-tint);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* 12. "कार्यक्रम" (Events) Section */
+.events-reordered-section {
+  background-color: #F3EFE6 !important;
+  padding: 60px 0 !important;
+}
+
+.default-blog-news {
+  background: var(--card-bg);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E4DFD2;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.default-blog-news:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.default-blog-news .lower-content {
+  padding: 20px;
+}
+
+.default-blog-news .category {
+  background: var(--brand-orange-accent);
+  color: var(--orange-btn-text);
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* 13. Footer Styling */
+.main-footer {
+  background-color: var(--brand-green-primary) !important;
+  color: var(--footer-text) !important;
+  border-top: 4px solid var(--brand-orange-accent);
+}
+
+.main-footer h4 {
+  color: #FFFFFF !important;
+  font-weight: 700;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.main-footer h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background: var(--brand-orange-accent);
+}
+
+.main-footer .text p {
+  color: #D2E4D8 !important;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.main-footer .widget-content ul.list li a {
+  color: #D2E4D8 !important;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.main-footer .widget-content ul.list li a:hover {
+  color: var(--brand-orange-accent) !important;
+  padding-left: 5px;
+}
+
+.main-footer .contact-info li {
+  color: #D2E4D8 !important;
+  font-size: 14px;
+}
+
+.main-footer .contact-info li a {
+  color: #D2E4D8 !important;
+}
+
+.main-footer .contact-info li a:hover {
+  color: var(--brand-orange-accent) !important;
+}
+
+.footer-bottom {
+  background-color: #0B2618 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px 0;
+}
+
+.footer-bottom p {
+  color: var(--footer-muted) !important;
+  font-size: 13px;
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #D2E4D8 !important;
+}
+
+.footer-bottom a:hover {
+  color: var(--brand-orange-accent) !important;
+}
+
+/* Volunteer Call-Out Banner */
+.call-out {
+  background: linear-gradient(135deg, var(--brand-orange-accent) 0%, #D97A14 100%) !important;
+  color: var(--orange-btn-text) !important;
+  padding: 30px 0 !important;
+}
+
+.call-out h4 {
+  color: #2F1E08 !important;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.call-out .thm-btn.style-3 {
+  background: #2F1E08 !important;
+  color: #FFFFFF !important;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.call-out .thm-btn.style-3:hover {
+  background: #FFFFFF !important;
+  color: #2F1E08 !important;
 }
 
 
-@media (max-width: 320px)
-{
-	.slide-content-box h1
-	{
-		font-size:20px;
-	}
-	.my-txt
-	{
-		font-size: 60px;
-	}
+/* ============================================================
+   CUSTOM CLEAN NAVBAR (lf-navbar) STYLES
+   Replaces old Bootstrap column-based nav on all pages
+   ============================================================ */
+
+/* Navbar wrapper */
+.lf-navbar {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 2px 20px rgba(20, 67, 42, 0.09) !important;
+  border-bottom: 2px solid var(--light-green-tint) !important;
+  padding: 0 !important;
+  position: relative;
+  z-index: 1000;
 }
 
+.lf-sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: slideDn 0.4s ease;
+}
+
+@keyframes slideDn {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
+/* Navbar inner flex row */
+.lf-nav-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 20px !important;
+  height: 70px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+/* Logo */
+.lf-logo {
+  flex-shrink: 0;
+}
+.lf-logo img {
+  height: 55px !important;
+  width: auto !important;
+  display: block;
+}
+
+/* Desktop nav */
+.lf-desktop-nav {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.lf-nav-list {
+  display: flex !important;
+  align-items: center !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 4px;
+}
+
+.lf-nav-list > li > a {
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: var(--brand-green-primary) !important;
+  padding: 8px 10px !important;
+  white-space: nowrap !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.lf-nav-list > li > a:hover,
+.lf-nav-list > li.active > a {
+  color: var(--brand-orange-accent) !important;
+  background: var(--light-green-tint) !important;
+}
+
+/* Desktop dropdown */
+.lf-has-dropdown {
+  position: relative;
+}
+
+.lf-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFFFFF !important;
+  min-width: 230px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border-top: 3px solid var(--brand-orange-accent);
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  z-index: 9999;
+}
+
+.lf-has-dropdown:hover .lf-dropdown {
+  display: block;
+  animation: fadeInDown 0.2s ease;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lf-dropdown li a {
+  display: block !important;
+  padding: 10px 20px !important;
+  color: var(--main-text) !important;
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(20, 67, 42, 0.06) !important;
+}
+
+.lf-dropdown li:last-child a {
+  border-bottom: none !important;
+}
+
+.lf-dropdown li a:hover {
+  background: var(--light-green-tint) !important;
+  color: var(--brand-green-primary) !important;
+  padding-left: 26px !important;
+}
+
+/* Right actions: Donate + Hamburger */
+.lf-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* New Donate button */
+.lf-donate-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: var(--brand-orange-accent) !important;
+  color: var(--orange-btn-text) !important;
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  padding: 9px 20px !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 12px rgba(234, 139, 34, 0.30) !important;
+  transition: all 0.25s ease !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.lf-donate-btn:hover {
+  background-color: #D97A14 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(234, 139, 34, 0.40) !important;
+}
+
+/* Hamburger button */
+.lf-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: var(--brand-green-primary) !important;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  transition: background 0.2s ease;
+}
+
+.lf-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animated hamburger → X */
+.lf-hamburger.lf-active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.lf-hamburger.lf-active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.lf-hamburger.lf-active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile nav panel (hidden by default) */
+.lf-mobile-nav {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  background: #FFFFFF;
+  border-top: 2px solid var(--light-green-tint);
+  transition: max-height 0.35s ease;
+}
+
+.lf-mobile-nav.lf-open {
+  display: block;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Mobile menu list */
+.lf-mobile-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 8px 0 15px !important;
+}
+
+.lf-mobile-list > li > a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 13px 20px !important;
+  color: var(--brand-green-primary) !important;
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid var(--light-green-tint) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.lf-mobile-list > li > a:hover {
+  background: var(--light-green-tint) !important;
+  color: var(--brand-orange-accent) !important;
+}
+
+/* Mobile sub-menu */
+.lf-mobile-list .lf-m-has-sub > ul {
+  display: none;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #F5FAF6 !important;
+  border-left: 3px solid var(--brand-orange-accent) !important;
+}
+
+.lf-mobile-list .lf-m-has-sub.lf-sub-open > ul {
+  display: block;
+}
+
+.lf-mobile-list .lf-m-has-sub > ul > li > a {
+  display: block !important;
+  padding: 10px 20px 10px 28px !important;
+  color: var(--brand-green-primary) !important;
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid rgba(20,67,42,0.07) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.lf-mobile-list .lf-m-has-sub > ul > li > a:hover {
+  background: var(--light-green-tint) !important;
+  color: var(--brand-orange-accent) !important;
+}
+
+/* Mobile Donate item */
+.lf-m-donate-item > a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: var(--brand-orange-accent) !important;
+  color: var(--orange-btn-text) !important;
+  padding: 13px 20px !important;
+  font-family: var(--font-marathi), var(--font-sans) !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  justify-content: center !important;
+  margin: 12px 15px 5px !important;
+  border-radius: 25px !important;
+}
+
+.lf-m-donate-item > a:hover {
+  background: #D97A14 !important;
+  color: #FFFFFF !important;
+}
+
+/* ============================================================
+   TASK 13: RESPONSIVE DESIGN — COMPLETE MOBILE OVERHAUL
+   ============================================================ */
+
+/* ---- Override old dark mobile navbar from responsive.css ---- */
+
+/* Mobile navbar background: White (not dark #333) */
+@media (max-width: 991px) {
+  .theme_menu,
+  .theme_menu.stricky {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 4px 20px rgba(20, 67, 42, 0.10) !important;
+    border-bottom: 2px solid var(--light-green-tint) !important;
+    padding: 0 !important;
+  }
 
 
+  /* Hamburger (showhide) button styling */
+  .defaultmainmenu .showhide {
+    width: 36px !important;
+    height: 36px !important;
+    background: var(--brand-green-primary) !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    padding: 8px !important;
+    position: absolute !important;
+    right: 15px !important;
+    top: 12px !important;
+    z-index: 9999 !important;
+  }
+
+  .defaultmainmenu .showhide span {
+    display: block !important;
+    width: 20px !important;
+    height: 2px !important;
+    background: #FFFFFF !important;
+    border-radius: 2px !important;
+    margin: 0 !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* Mobile nav logo */
+  .main-logo {
+    margin: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    padding: 10px 0 !important;
+  }
+
+  .main-logo img {
+    height: 50px !important;
+    width: auto !important;
+  }
+
+  /* Mobile nav row layout */
+  .theme_menu .row {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    min-height: 60px !important;
+  }
+
+  /* Mobile menu full-width dropdown panel */
+  .defaultmainmenu-menu {
+    background: #FFFFFF !important;
+    border-top: 2px solid var(--light-green-tint) !important;
+    box-shadow: 0 6px 20px rgba(20, 67, 42, 0.10) !important;
+    padding: 10px 0 15px !important;
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+  }
+
+  /* Mobile menu items */
+  .defaultmainmenu-menu > li > a {
+    color: var(--brand-green-primary) !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid var(--light-green-tint) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: transparent !important;
+    font-family: var(--font-marathi), var(--font-sans) !important;
+  }
+
+  .defaultmainmenu-menu > li > a:hover,
+  .defaultmainmenu-menu > li.active > a {
+    color: var(--brand-orange-accent) !important;
+    background: var(--light-green-tint) !important;
+  }
+
+  /* Mobile dropdown submenu — white, not dark */
+  .defaultmainmenu-menu ul.dropdown {
+    background: #F5FAF6 !important;
+    border-top: 1px solid var(--light-green-tint) !important;
+    border-bottom: 1px solid var(--light-green-tint) !important;
+    border-left: 3px solid var(--brand-orange-accent) !important;
+    padding: 5px 0 !important;
+    margin: 0 !important;
+  }
+
+  .defaultmainmenu-menu ul.dropdown li a {
+    color: var(--brand-green-primary) !important;
+    font-size: 14px !important;
+    padding: 10px 20px 10px 28px !important;
+    background: transparent !important;
+    display: block !important;
+    border-bottom: 1px solid rgba(20, 67, 42, 0.07) !important;
+    font-family: var(--font-marathi), var(--font-sans) !important;
+  }
+
+  .defaultmainmenu-menu ul.dropdown li a:hover {
+    color: var(--brand-orange-accent) !important;
+    background: var(--light-green-tint) !important;
+  }
+
+  .defaultmainmenu-responsive .defaultmainmenu-menu.defaultmainmenu-indented > li > ul.dropdown > li:hover > a {
+    padding-left: 28px !important;
+  }
+
+  /* Donate button on mobile — hide in the col area, show inline */
+  .donate-btn-nav {
+    font-size: 11px !important;
+    padding: 7px 12px !important;
+    border-radius: 20px !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+  }
+
+  .donate-btn-nav span {
+    display: none !important;  /* hide text on small screens */
+  }
+
+  /* Slide hero */
+  .slide-content-box {
+    margin: 15px !important;
+    padding: 18px !important;
+    max-width: calc(100% - 30px) !important;
+  }
+
+  .slide-content-box h1 {
+    font-size: 24px !important;
+  }
+
+  /* Stat cards */
+  .stat-card-compact {
+    margin-bottom: 15px;
+  }
+}
+
+/* ---- Tablet (768px to 991px) ---- */
+@media (max-width: 991px) and (min-width: 768px) {
+  .donate-btn-nav span {
+    display: inline !important; /* show text on tablets */
+  }
+
+  .donate-btn-nav {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
+
+  .main-logo img {
+    height: 55px !important;
+    width: auto !important;
+  }
+}
+
+/* ---- Small mobile (under 576px) ---- */
+@media (max-width: 576px) {
+  /* Top bar center aligned */
+  .top-bar .float_left,
+  .top-bar .float_right,
+  .top-bar-text,
+  .right-column {
+    float: none !important;
+    text-align: center !important;
+  }
+
+  .top-bar .contact-info {
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .top-bar .contact-info li {
+    display: block !important;
+    margin-bottom: 4px;
+  }
+
+  /* Language dropdown centered on mobile */
+  .lang-dropdown-wrapper {
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .main-logo img {
+    height: 42px !important;
+    width: auto !important;
+  }
+
+  .slide-content-box h1 {
+    font-size: 20px !important;
+  }
+
+  .slide-content-box p {
+    font-size: 13px !important;
+  }
+
+  /* Cards stack single column */
+  .stat-card-compact {
+    margin-bottom: 12px;
+  }
+
+  /* Section padding reduce */
+  .sec-padd,
+  .sec-padd2,
+  .sec-padd3 {
+    padding: 30px 0 !important;
+  }
+
+  /* Project cards full width */
+  .urgent-cause2 .item.col-md-6 {
+    width: 100% !important;
+    float: none !important;
+  }
+
+  /* Footer responsive */
+  .main-footer .footer-widget {
+    margin-bottom: 25px !important;
+  }
+}
+
+/* ---- No horizontal scroll ---- */
+body {
+  overflow-x: hidden !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   NEW NAVBAR (lf-navbar) — RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* Mobile: show hamburger, hide desktop nav */
+@media (max-width: 991px) {
+  .lf-hamburger {
+    display: flex !important;
+  }
+
+  .lf-desktop-nav {
+    display: none !important;
+  }
+
+  .lf-donate-btn span {
+    display: none; /* icon only on small mobile */
+  }
+
+  .lf-nav-container {
+    height: 60px !important;
+    padding: 0 15px !important;
+  }
+
+  .lf-logo img {
+    height: 45px !important;
+  }
+}
+
+/* Tablet: show donate text */
+@media (min-width: 600px) and (max-width: 991px) {
+  .lf-donate-btn span {
+    display: inline !important;
+  }
+
+  .lf-donate-btn {
+    font-size: 12px !important;
+    padding: 7px 14px !important;
+  }
+}
+
+/* Desktop: hide hamburger */
+@media (min-width: 992px) {
+  .lf-hamburger {
+    display: none !important;
+  }
+
+  .lf-desktop-nav {
+    display: block !important;
+  }
+
+  .lf-mobile-nav {
+    display: none !important;
+  }
+}

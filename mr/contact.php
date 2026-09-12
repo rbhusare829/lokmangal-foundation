@@ -52,180 +52,99 @@ swal({
 <div class="boxed_wrapper">
 
 <div class="boxed_wrapper">
+        
         <div class="top-bar">
             <div class="container">
                 <div class="clearfix">
                     <div class="top-bar-text float_left">
-                        <a class="thm-btn donate-box-btn" href="donation-form.php">देणगी द्या</a>
-
-                        <!-- <p>No One Has Ever Become Poor By Giving!</p> -->
-
+                        <ul class="list_inline contact-info">
+                            <li><span class="icon-phone"></span><a href="tel:9028775590">फोन : ९०२८७७५५९०</a></li>
+                            <li><span class="icon-back"></span><a href="mailto:lokmangalgroups@gmail.com">ई-मेल : lokmangalgroups@gmail.com</a></li>
+                        </ul>
                     </div>
 
-
                     <div class="right-column float_right">
-                        <ul class="list_inline contact-info">
-                            <li><span class="icon-phone"></span>फोन : ९०२८७७५५९०</li>
-
-                            <li><span class="icon-back"></span> ई-मेल : lokmangalgroups@gmail.com</li>
-
-                            <li><a href="../contact.php" style="color: #333;">English</a> | <span style="color: #14432A; font-weight: bold;">मराठी</span></li>
-
-                        </ul>
-
-                        <!-- <div class="" id="polyglotLanguageSwitcher">
-                           
-                            <form action="#">
-
-                                <select id="polyglot-language-options">
-                                
-                                    <option id="en" selected value="en">
-                                        English
-                                    </option>
-
-                                    <option id="fr" value="fr">
-                                        Marathi
-                                    </option>
-
-                                </select>
-
-                            </form>
-
-                        </div> -->
+                        <div class="lang-dropdown-wrapper">
+                            <a href="javascript:void(0);" class="lang-dropdown-btn" aria-label="Select Language">
+                                <i class="fa fa-globe"></i> <span>मराठी</span> <i class="fa fa-angle-down" style="font-size: 11px;"></i>
+                            </a>
+                            <div class="lang-dropdown-menu">
+                                <a href="../contact.html" class="">English</a>
+                                <a href="contact.html" class="active">मराठी</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    
 
 
+        
         <section class="theme_menu stricky">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
+                <div class="row" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="col-md-3 col-sm-6 col-xs-8">
                         <div class="main-logo">
-                            <a href="index.php"><img alt="Lokmangal Logo" src="../images/logo/lokmangal-logo.png"></a>
+                            <a href="index.html"><img alt="Lokmangal Logo" src="../images/logo/lokmangal-logo.png"></a>
                         </div>
                     </div>
 
-
-                    <div class="col-md-9 menu-column">
-                       
+                    <div class="col-md-7 col-sm-12 menu-column">
                         <nav class="defaultmainmenu" id="main_menu">
-                           
                             <ul class="defaultmainmenu-menu">
-                                
-                                <li>
-                                    <a href="index.php">मुख्य पृष्ठ</a>
+                                <li class="">
+                                    <a href="index.html">मुख्य पृष्ठ</a>
                                 </li>
 
-                                <li class="active">
-                                    <a href="javascript:void(0);">फाऊंडेशनबद्दल</a>
-
+                                <li class="dropdown-holder ">
+                                    <a href="javascript:void(0);">फाऊंडेशनबद्दल <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
-                                        <li>
-                                            <a href="about.php">लोकमंगल फाऊंडेशनबद्दल</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="volunteer.php">स्वयंसेवक म्हणून सहभागी व्हा</a>
-                                        </li>
-
-
-                                        <li>
-                                            <a href="faq.php">सामान्य प्रश्न</a>
-                                        </li>
-
-
-                                        <li>
-                                            <a href="testimonials.php">अभिप्राय</a>
-                                        </li>
-
+                                        <li><a href="about.html">लोकमंगल फाऊंडेशनबद्दल</a></li>
+                                        <li><a href="volunteer.html">स्वयंसेवक म्हणून सहभागी व्हा</a></li>
+                                        <li><a href="faq.html">सामान्य प्रश्न</a></li>
+                                        <li><a href="testimonials.html">अभिप्राय</a></li>
                                     </ul>
                                 </li>
 
-
-                                <li>
-                                    <a href="projects.php">प्रकल्प</a>
-
+                                <li class="dropdown-holder ">
+                                    <a href="projects.html">प्रकल्प <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown">
-                                        <li>
-                                            <a href="lokmangal-annapurna-yojana.php">लोकमंगल अन्नपूर्णा योजना </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="jalsandharan-project.php">जलसंधारण प्रकल्प</a>
-                                        </li>
-
-                                        <li class="hidden-xs">
-                                            <a href="vidyadaan-yojana.php">लोटस (लोकमंगल ऑर्गनायझेशन <br>फॉर टीचिंग अंडरप्रिव्हिलेज्ड स्टुडंट्स)</a>
-                                        </li>
-
-                                        <li class="hidden-lg hidden-md">
-                                            <a href="vidyadaan-yojana.php">लोटस <br> (लोकमंगल ऑर्गनायझेशन फॉर<br> टीचिंग अंडरप्रिव्हिलेज्ड स्टुडंट्स)</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="samudayik-vivah-sohala.php">सामुदायिक विवाह सोहळा</a>
-                                        </li>
+                                        <li><a href="lokmangal-annapurna-yojana.html">लोकमंगल अन्नपूर्णा योजना</a></li>
+                                        <li><a href="jalsandharan-project.html">जलसंधारण प्रकल्प</a></li>
+                                        <li><a href="vidyadaan-yojana.html">लोटस (विद्यादान योजना)</a></li>
+                                        <li><a href="samudayik-vivah-sohala.html">सामुदायिक विवाह सोहळा</a></li>
                                     </ul>
                                 </li>
 
-                                <li>
-                                    <a href="gallery.php">छायाचित्रे</a>
+                                <li class="">
+                                    <a href="gallery.html">छायाचित्रे</a>
                                 </li>
 
-                                <li>
-                                    <a href="contribute.php">योगदान</a>
+                                <li class="">
+                                    <a href="contribute.html">योगदान</a>
                                 </li>
-                                
 
                                 <li>
                                     <a href="https://lokmangalfoundation.blogspot.com/" target="_blank">लेख</a>
                                 </li>
 
-                                 <li>
-                                    <a href="contact.php">संपर्क</a>
+                                <li class="active">
+                                    <a href="contact.html">संपर्क</a>
                                 </li>
-
-                                
                             </ul>
                         </nav>
                     </div>
-                   
-                    <div class="right-column">
-                        <div class="nav_side_content">
-                            <ul class="social-icon">
-                                <li>
-                                    <a href="https://www.facebook.com/lokmangalfoundation/" target="_blank"><i class="fa fa-facebook"></i></a>
-                                </li>
 
-                                <li>
-                                    <a href="https://twitter.com/LokmangalFound" target="_blank"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.instagram.com/lokmangal_foundation/" target="_blank"><i class="fa fa-instagram"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://in.pinterest.com/lokmangalfoundation/" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.linkedin.com/company/lokmangalfoundation/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCk4QgXC_Qr6UtkHx9Tbm8yA?view_as=subscriberv" target="_blank"><i class="fa fa-youtube"></i></a>
-                                </li>
-
-                            </ul>
-
-                        </div>
+                    <div class="col-md-2 col-sm-6 col-xs-4 text-right" style="display: flex; align-items: center; justify-content: flex-end; gap: 12px;">
+                        <a class="donate-btn-nav" href="https://pages.razorpay.com/lokmangalfoundation" target="_blank">
+                            <i class="fa fa-heart"></i> <span>देणगी द्या</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+     
 
 <div class="inner-banner has-base-color-overlay text-center" style="background: url(../images/background/top-banner.jpg);">
     <div class="container">
@@ -240,7 +159,7 @@ swal({
         <div class="pull-left">
             <ul class="list-inline link-list">
                 <li>
-                    <a href="index.php">मुख्य पृष्ठ</a>
+                    <a href="index.html">मुख्य पृष्ठ</a>
                 </li>
                 
                 <li>

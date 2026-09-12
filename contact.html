@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,187 +52,117 @@ swal({
 <div class="boxed_wrapper">
 
 <div class="boxed_wrapper">
+        
         <div class="top-bar">
             <div class="container">
                 <div class="clearfix">
                     <div class="top-bar-text float_left">
-                        <a class="thm-btn donate-box-btn" href="https://pages.razorpay.com/lokmangalfoundation" target="_blank">donate</a>
-
-                        <!-- <p>No One Has Ever Become Poor By Giving!</p> -->
-
+                        <ul class="list_inline contact-info">
+                            <li><span class="icon-phone"></span><a href="tel:9923404583">Phone: +91 9923404583</a></li>
+                            <li><span class="icon-back"></span><a href="mailto:lokmangalgroups@gmail.com">Email: lokmangalgroups@gmail.com</a></li>
+                        </ul>
                     </div>
 
-
                     <div class="right-column float_right">
-                        <ul class="list_inline contact-info">
-                            <li><span class="icon-phone"></span>Phone: <a href="tel:9923404583">+91 9923404583</a></li>
-
-                            <li><span class="icon-back"></span>Email: <a href="mailto:lokmangalgroups@gmail.com">lokmangalgroups@gmail.com</a></li>
-
-                            <li><span style="color: #14432A; font-weight: bold;">English</span> | <a href="mr/contact.html" style="color: #333;">मराठी</a></li>
-                            
-                        </ul>
-
-                        <!-- <div class="" id="">
-                           
-                            <form action="#">
-                                
-                                <ul style="list-style-type: inline;">
-                                    <li>English</li>
-                                    <li>Marathi</li>
-                                </ul>
-
-                                <select id="polyglot-language-options">
-                                
-                                    <option id="en" selected value="en">
-                                        English
-                                    </option>
-
-                                    <option id="fr" value="fr">
-                                        Marathi
-                                    </option>
-
-                                </select>
-
-                            </form>
-
-                        </div> -->
-
+                        <div class="lang-dropdown-wrapper">
+                            <a href="javascript:void(0);" class="lang-dropdown-btn" aria-label="Select Language">
+                                <i class="fa fa-globe"></i> <span>English</span> <i class="fa fa-angle-down" style="font-size: 11px;"></i>
+                            </a>
+                            <div class="lang-dropdown-menu">
+                                <a href="contact.html" class="active">English</a>
+                                <a href="mr/contact.html" class="">मराठी</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    
 
 
-        <section class="theme_menu stricky">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="main-logo">
-                            <a href="index.html"><img alt="Lokmangal Logo" src="images/logo/lokmangal-logo.png"></a>
-                        </div>
-                    </div>
+        
+                <!-- NAVIGATION BAR — CLEAN MOBILE-READY -->
+        <section class="theme_menu stricky lf-navbar" id="site-navbar">
+            <div class="container-fluid lf-nav-container">
+                <!-- Logo -->
+                <div class="lf-logo">
+                    <a href="index.html"><img alt="Lokmangal Foundation" src="images/logo/lokmangal-logo.png" height="55"></a>
+                </div>
 
-
-                    <div class="col-md-9 menu-column">
-                       
-                        <nav class="defaultmainmenu" id="main_menu">
-                           
-                            <ul class="defaultmainmenu-menu">
-                                
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-
-                                <li class="active">
-                                    <a href="javascript:void(0);">About</a>
-
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a href="about.html">About Lokmangal Foundation</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="volunteer.html">Join as Volunteer</a>
-                                        </li>
-
-
-                                        <li>
-                                            <a href="faq.html">FAQ's</a>
-                                        </li>
-
-
-                                        <li>
-                                            <a href="testimonials.html">Testimonials</a>
-                                        </li>
-
-
-                                    </ul>
-                                </li>
-
-
-                                <li>
-                                    <a href="projects.html">Projects</a>
-
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a href="lokmangal-annapurna-yojana.html">Lokmangal Annapoorna Yojana</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="jalsandharan-project.html">Jalsandharan Project</a>
-                                        </li>
-
-                                        <li class="hidden-xs">
-                                            <a href="vidyadaan-yojana.html">LOTUS (Lokmangal Organization<br> for Teaching Underprivileged Students)</a>
-                                        </li>
-
-                                        <li class="hidden-lg hidden-md">
-                                            <a href="vidyadaan-yojana.html">LOTUS <br> (Lokmangal Organization for<br> Teaching Underprivileged Students)</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="samudayik-vivah-sohala.html">Samudayik Vivah Sohala</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="gallery.html">Gallery</a>
-                                </li>
-
-                                <li>
-                                    <a href="contribute.html">Contribute</a>
-                                </li>
-                                
-
-                                <li>
-                                    <a href="https://lokmangalfoundation.blogspot.com/" target="_blank">Blogs</a>
-                                </li>
-
-                                 <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-
-                                
+                <!-- Desktop Menu -->
+                <nav class="lf-desktop-nav" id="main_menu">
+                    <ul class="lf-nav-list">
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li class="lf-has-dropdown ">
+                            <a href="javascript:void(0);">About <i class="fa fa-angle-down"></i></a>
+                            <ul class="lf-dropdown">
+                                <li><a href="about.html">About Lokmangal Foundation</a></li>
+                                <li><a href="volunteer.html">Join as Volunteer</a></li>
+                                <li><a href="faq.html">FAQ's</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
                             </ul>
-                        </nav>
-                    </div>
-                   
-                    <div class="right-column">
-                        <div class="nav_side_content">
-                            <ul class="social-icon">
-                                <li>
-                                    <a href="https://www.facebook.com/lokmangalfoundation/" target="_blank"><i class="fa fa-facebook"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://twitter.com/LokmangalFound" target="_blank"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.instagram.com/lokmangal_foundation/" target="_blank"><i class="fa fa-instagram"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://in.pinterest.com/lokmangalfoundation/" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.linkedin.com/company/lokmangalfoundation/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCk4QgXC_Qr6UtkHx9Tbm8yA?view_as=subscriberv" target="_blank"><i class="fa fa-youtube"></i></a>
-                                </li>
-
+                        </li>
+                        <li class="lf-has-dropdown ">
+                            <a href="projects.html">Projects <i class="fa fa-angle-down"></i></a>
+                            <ul class="lf-dropdown">
+                                <li><a href="lokmangal-annapurna-yojana.html">Lokmangal Annapoorna Yojana</a></li>
+                                <li><a href="jalsandharan-project.html">Jalsandharan Project</a></li>
+                                <li><a href="vidyadaan-yojana.html">LOTUS (Vidyadaan Yojana)</a></li>
+                                <li><a href="samudayik-vivah-sohala.html">Samudayik Vivah Sohala</a></li>
                             </ul>
+                        </li>
+                        <li class=""><a href="gallery.html">Gallery</a></li>
+                        <li class=""><a href="contribute.html">Contribute</a></li>
+                        <li><a href="https://lokmangalfoundation.blogspot.com/" target="_blank">Blogs</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
 
-                        </div>
-                    </div>
+                <!-- Right Actions -->
+                <div class="lf-nav-actions">
+                    <a class="lf-donate-btn" href="https://pages.razorpay.com/lokmangalfoundation" target="_blank">
+                        <i class="fa fa-heart"></i> <span>Donate</span>
+                    </a>
+                    <button class="lf-hamburger" id="lf-hamburger-btn" aria-label="Toggle Menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
-        </section> 
+
+            <!-- Mobile Slide-Down Menu -->
+            <div class="lf-mobile-nav" id="lf-mobile-nav">
+                <ul class="lf-mobile-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="lf-m-has-sub">
+                        <a href="javascript:void(0);">About <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="about.html">About Lokmangal Foundation</a></li>
+                            <li><a href="volunteer.html">Join as Volunteer</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="lf-m-has-sub">
+                        <a href="projects.html">Projects <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="lokmangal-annapurna-yojana.html">Lokmangal Annapoorna Yojana</a></li>
+                            <li><a href="jalsandharan-project.html">Jalsandharan Project</a></li>
+                            <li><a href="vidyadaan-yojana.html">LOTUS (Vidyadaan Yojana)</a></li>
+                            <li><a href="samudayik-vivah-sohala.html">Samudayik Vivah Sohala</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contribute.html">Contribute</a></li>
+                    <li><a href="https://lokmangalfoundation.blogspot.com/" target="_blank">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="lf-m-donate-item">
+                        <a href="https://pages.razorpay.com/lokmangalfoundation" target="_blank">
+                            <i class="fa fa-heart"></i> Donate Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 <div class="inner-banner has-base-color-overlay text-center" style="background: url(images/background/top-banner.jpg);">
     <div class="container">
@@ -356,3 +286,5 @@ swal({
 </section>
 
 
+
+    <script src="js/mobile-nav.js"></script>
